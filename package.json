@@ -1,0 +1,31 @@
+{
+  "name": "find-comment",
+  "version": "1.0.3",
+  "description": "Find an issue or pull request comment",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint index.js && jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermeprokisch/find-comment.git"
+  },
+  "keywords": [],
+  "author": "Guilherme Prokisch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilhermeprokisch/find-comment/issues"
+  },
+  "homepage": "https://github.com/guilhermeprokisch/find-comment#readme",
+  "dependencies": {
+    "@actions/core": "1.2.4",
+    "@actions/github": "4.0.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "0.22.3",
+    "eslint": "7.4.0",
+    "jest": "26.1.0"
+  }
+}
